@@ -25,6 +25,79 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link rel="stylesheet" href="https://rawcdn.githack.com/nextapps-de/spotlight/0.7.8/dist/css/spotlight.min.css">
         <script src="https://rawcdn.githack.com/nextapps-de/spotlight/0.7.8/dist/js/spotlight.min.js"></script>
+
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <!-- <script>
+    var cont=0;
+function loopSlider(){
+  var xx= setInterval(function(){
+        switch(cont)
+        {
+        case 0:{
+            $("#slider-1").fadeOut(400);
+            $("#slider-2").delay(400).fadeIn(400);
+            $("#sButton1").removeClass("bg-cyan-800");
+            $("#sButton2").addClass("bg-cyan-800");
+        cont=1;
+        
+        break;
+        }
+        case 1:
+        {
+        
+            $("#slider-2").fadeOut(400);
+            $("#slider-1").delay(400).fadeIn(400);
+            $("#sButton2").removeClass("bg-cyan-800");
+            $("#sButton1").addClass("bg-cyan-800");
+           
+        cont=0;
+        
+        break;
+        }
+        
+        
+        }},8000);
+
+}
+
+function reinitLoop(time){
+clearInterval(xx);
+setTimeout(loopSlider(),time);
+}
+
+
+
+function sliderButton1(){
+
+    $("#slider-2").fadeOut(400);
+    $("#slider-1").delay(400).fadeIn(400);
+    $("#sButton2").removeClass("bg-cyan-800");
+    $("#sButton1").addClass("bg-cyan-800");
+    reinitLoop(4000);
+    cont=0
+    
+    }
+    
+    function sliderButton2(){
+    $("#slider-1").fadeOut(400);
+    $("#slider-2").delay(400).fadeIn(400);
+    $("#sButton1").removeClass("bg-cyan-800");
+    $("#sButton2").addClass("bg-cyan-800");
+    reinitLoop(4000);
+    cont=1
+    
+    }
+
+    $(window).ready(function(){
+        $("#slider-2").hide();
+        $("#sButton1").addClass("bg-cyan-800");
+        
+
+        loopSlider();
+    });
+
+  
+  </script> -->
         
 
 </head>
@@ -806,203 +879,477 @@
             </h2>
         </div>
 
-        <div class="max-w-7xl mt-4 relative mx-auto ">
+        <div class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-6xl w-full swiper pt-6 mx-auto">
+            <div class="slide-content overflow-hidden pb-14 mx-6 sr02">
+                <div class=" swiper-wrapper select-none">
+        <div class="max-w-7xl mt-4 relative mx-auto">
             <div
                 class="max-w-xs md:max-w-[42rem] lg:max-w-[62rem] mx-auto grid grid-cols-1 pt-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
 
                 <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-                    <img class="h-56 rounded-lg w-full object-cover object-center"
-                        src="./assets/img/portfolio/awscloudfoundation.jpg" alt="blog">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/awscloudpractictioner.jpg" alt="blog">
                     <div class="p-4 ">
 
                         <div class="flex items-center justify-between text-xs mb-4">
                             <a class="text-white">
-                                08 September 2022
+                                Issue date: 23 May, 2022
                             </a>
-                            <span class="text-[#6747f6]">
-                                Tips & Tricks
+                            <span class="text-[#FF5733]">
+                                Expiration date: 25 May, 2022
                             </span>
                         </div>
 
                         <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                            Tip for Conduction Remote UX Research and Testing</h1>
+                            AWS Cloud Practitioner</h1>
                         <p class="mb-3 text-white text-xs text-center">
-                            Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                            tousled
-                            microdosing tousled waistcoat.
+                            I have succefully completed AWS Certified Cloud Practictioner Certification, as I have a fundamental understanding of IT services and their uses in the AWS Cloud.
                         </p>
                         <div class="p-2 w-full">
-                            <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                            <a href="./awscp.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
                                 relative overflow-hidden z-10">
-                                Button
-                            </button>
+                                View
+                            </button></a>
                         </div>
                     </div>
                 </div>
                 <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-                    <img class="h-56 rounded-lg w-full object-cover object-center"
-                        src="./assets/img/portfolio/awscloudfoundation.jpg" alt="blog">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/awssolution.jpg" alt="blog">
                     <div class="p-4 ">
 
                         <div class="flex items-center justify-between text-xs mb-4">
                             <a class="text-white">
-                                08 September 2022
+                                Issue date: Nov 09, 202
                             </a>
-                            <span class="text-[#6747f6]">
-                                Tips & Tricks
+                            <span class="text-[#FF5733]">
+                                Expiration date: Nov 09, 2025
                             </span>
                         </div>
 
                         <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                            Tip for Conduction Remote UX Research and Testing</h1>
+                            AWS Certified Solutions Architect-Associate</h1>
                         <p class="mb-3 text-white text-xs text-center">
-                            Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                            tousled
-                            microdosing tousled waistcoat.
+                            I have succefully completed AWS Certified Solutions Architect-Associate Certification, as I have a comprehensive understanding of AWS services and technologies. 
                         </p>
                         <div class="p-2 w-full">
-                            <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                            <a href="./awssa.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
                                 relative overflow-hidden z-10">
-                                Button
-                            </button>
+                                View
+                            </button></a>
                         </div>
                     </div>
                 </div>
                 <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-                    <img class="h-56 rounded-lg w-full object-cover object-center"
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
                         src="./assets/img/portfolio/awscloudfoundation.jpg" alt="blog">
                     <div class="p-4 ">
 
                         <div class="flex items-center justify-between text-xs mb-4">
                             <a class="text-white">
-                                08 September 2022
+                                Issue date: Nov 09, 2022
                             </a>
-                            <span class="text-[#6747f6]">
-                                Tips & Tricks
+                            <span class="text-[#FF5733]">
+                                Expiration date: Nov 09, 2025
                             </span>
                         </div>
 
                         <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                            Tip for Conduction Remote UX Research and Testing</h1>
+                            AWS Certified Solutions Architect-Associate</h1>
                         <p class="mb-3 text-white text-xs text-center">
-                            Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                            tousled
-                            microdosing tousled waistcoat.
+                            I have of this badge have taken the AWS Academy Cloud Foundations course.
                         </p>
                         <div class="p-2 w-full">
-                            <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                            <a href="./awscf.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
                                 relative overflow-hidden z-10">
-                                Button
-                            </button>
+                                View
+                            </button></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-                    <img class="h-56 rounded-lg w-full object-cover object-center"
-                        src="./assets/img/portfolio/awscloudfoundation.jpg" alt="blog">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/awsacademysem1.jpg" alt="blog">
                     <div class="p-4 ">
 
                         <div class="flex items-center justify-between text-xs mb-4">
                             <a class="text-white">
-                                08 September 2022
+                                Issue date: Nov 16, 2022
                             </a>
-                            <span class="text-[#6747f6]">
-                                Tips & Tricks
+                            <span class="text-[#FF5733]">
+                                Expiration date: No Expire date
                             </span>
                         </div>
 
                         <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                            Tip for Conduction Remote UX Research and Testing</h1>
+                            AWS Academy Graduate - AWS Academy Introduction to Cloud Semester 1</h1>
                         <p class="mb-3 text-white text-xs text-center">
-                            Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                            tousled
-                            microdosing tousled waistcoat.
+                            I have of this badge have completed the AWS Academy Introduction to Cloud Semester 1.
                         </p>
                         <div class="p-2 w-full">
-                            <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                            <a href="./awssem1.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
                                 relative overflow-hidden z-10">
-                                Button
-                            </button>
+                                View
+                            </button></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-                    <img class="h-56 rounded-lg w-full object-cover object-center"
-                        src="./assets/img/portfolio/awscloudfoundation.jpg" alt="blog">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/microsoft_azure_fund.png" alt="blog">
                     <div class="p-4 ">
 
                         <div class="flex items-center justify-between text-xs mb-4">
                             <a class="text-white">
-                                08 September 2022
+                                Issue date: 07 January, 2023
                             </a>
-                            <span class="text-[#6747f6]">
-                                Tips & Tricks
+                            <span class="text-[#FF5733]">
+                                Expiration date: No Expiration Date
                             </span>
                         </div>
 
                         <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                            Tip for Conduction Remote UX Research and Testing</h1>
+                            Microsoft Certified: Azure Fundamentals</h1>
                         <p class="mb-3 text-white text-xs text-center">
-                            Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                            tousled
-                            microdosing tousled waistcoat.
+                            I have succefully completed  Microsoft Certified: Azure Fundamentals Certification, as I have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.
                         </p>
                         <div class="p-2 w-full">
-                            <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                            <a href="./azurefund.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
                                 relative overflow-hidden z-10">
-                                Button
-                            </button>
+                                View
+                            </button></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-                    <img class="h-56 rounded-lg w-full object-cover object-center"
-                        src="./assets/img/portfolio/awscloudfoundation.jpg" alt="blog">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/ai_fund.png" alt="blog">
                     <div class="p-4 ">
 
                         <div class="flex items-center justify-between text-xs mb-4">
                             <a class="text-white">
-                                08 September 2022
+                                Issue date: 22 November, 2022
                             </a>
-                            <span class="text-[#6747f6]">
-                                Tips & Tricks
+                            <span class="text-[#FF5733]">
+                                Expiration date: No Expiration Date
                             </span>
                         </div>
 
                         <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                            Tip for Conduction Remote UX Research and Testing</h1>
+                            Microsoft Certified: Azure AI Fundamentals</h1>
                         <p class="mb-3 text-white text-xs text-center">
-                            Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                            tousled
-                            microdosing tousled waistcoat.
+                            I have succefully completed Microsoft Certified: Azure Fundamentals Certification, as I have demonstrated foundational knowledge of machine learning (ML) and artificial intelligence (AI) concepts and related Microsoft Azure services.
                         </p>
                         <div class="p-2 w-full">
-                            <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                            <a href="./azureai.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
                                 relative overflow-hidden z-10">
-                                Button
-                            </button>
+                                View
+                            </button></a>
                         </div>
                     </div>
                 </div>
+
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/googlecloud.jpg" alt="blog">
+                    <div class="p-4 ">
+
+                        <div class="flex items-center justify-between text-xs mb-4">
+                            <a class="text-white">
+                                Issue date: 7 October, 2022
+                            </a>
+                            <span class="text-[#FF5733]">
+                                Expiration date: No Expiration Date
+                            </span>
+                        </div>
+
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                            Google Cloud Fundamentals for AWS Professionals</h1>
+                        <p class="mb-3 text-white text-xs text-center">
+                            I have succefully completed Google Cloud Fundamentals for AWS Professionals Certification, as I have a fundamental understanding and experience of Load Balancing, Google, Google Cloud Platform, Cloud Computing.
+                        </p>
+                        <div class="p-2 w-full">
+                            <a href="./googlecloud.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                relative overflow-hidden z-10">
+                                View
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/googledigital.jpg" alt="blog">
+                    <div class="p-4 ">
+
+                        <div class="flex items-center justify-between text-xs mb-4">
+                            <a class="text-white">
+                                Issue date: 04 October, 2022
+                            </a>
+                            <span class="text-[#FF5733]">
+                                Expiration date: No Expire date
+                            </span>
+                        </div>
+
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                            The Fundamentals of Digital Marketing</h1>
+                        <p class="mb-3 text-white text-xs text-center">
+                            I have succefully completed The Fundamentals of Digital Marketing Certification from Google Digital Garage, Master the basics of digital marketing with our free course accredited by Interactive Advertising Bureau Europe and The Open University.
+                        </p>
+                        <div class="p-2 w-full">
+                            <a href="./googledigitalgarage.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                relative overflow-hidden z-10">
+                                View
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/IBMcloud.jpg" alt="blog">
+                    <div class="p-4 ">
+
+                        <div class="flex items-center justify-between text-xs mb-4">
+                            <a class="text-white">
+                                Issue date: 05 October 2022
+                            </a>
+                            <span class="text-[#FF5733]">
+                                Expiration date: No expire date
+                            </span>
+                        </div>
+
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                            IBM Cloud Essentials</h1>
+                        <p class="mb-3 text-white text-xs text-center">
+                            I have succefully completed IBM Cloud Essentials Certification, as IBM Cloud enables the different service (IaaS, PaaS, SaaS) models and different deployment (Public, Hybrid, Private) models of cloud computing. 
+                        </p>
+                        <div class="p-2 w-full">
+                            <a href="./ibmcloudessential.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                relative overflow-hidden z-10">
+                                View
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/ibmcloudnative.jpg" alt="blog">
+                    <div class="p-4 ">
+
+                        <div class="flex items-center justify-between text-xs mb-4">
+                            <a class="text-white">
+                                Issue date: 12 October 2022
+                            </a>
+                            <span class="text-[#FF5733]">
+                                Expiration date: No expire date
+                            </span>
+                        </div>
+
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                            Building Cloud Native and Multicloud Applications</h1>
+                        <p class="mb-3 text-white text-xs text-center">
+                            I have succefully completed Building Cloud Native and Multicloud Applications Certification, as I am able to make decisions about migrating existing images to cloud; modernizing applications; using cloud-native practices; leveraging best practices for continuous integration and continuous delivery; and managing multiple cloud infrastructures, applications and middleware.
+                        </p>
+                        <div class="p-2 w-full">
+                            <a href="./ibmcloudnative.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                relative overflow-hidden z-10">
+                                View
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/cloudscalability.jpg" alt="blog">
+                    <div class="p-4 ">
+
+                        <div class="flex items-center justify-between text-xs mb-4">
+                            <a class="text-white">
+                                Issue date: 27 September, 2022
+                            </a>
+                            <span class="text-[#FF5733]">
+                                Expiration date: No expire date
+                            </span>
+                        </div>
+
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                            Cloud Scalability</h1>
+                        <p class="mb-3 text-white text-xs text-center">
+                            I have succefully completed Cloud Scalability pathway, as I learnt about Cloud scalability and its types. You will also learn about the need for and importance of Cloud Scalability in businesses.
+                        </p>
+                        <div class="p-2 w-full">
+                            <a href="./cloudscalability.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                relative overflow-hidden z-10">
+                                View
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/aimetaverse.jpg" alt="blog">
+                    <div class="p-4 ">
+
+                        <div class="flex items-center justify-between text-xs mb-4">
+                            <a class="text-white">
+                                Issue date: 27 September, 2022
+                            </a>
+                            <span class="text-[#FF5733]">
+                                Expiration date: No expire date
+                            </span>
+                        </div>
+
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                            AI and Metaverse</h1>
+                        <p class="mb-3 text-white text-xs text-center">
+                            I have succefully completed AI and Metaverse pathway, as I have learnt how Artificial Intelligence (AI) is being used tp shape the Metaverse. You will also learn about the applications of AI in Metaverse.
+                        </p>
+                        <div class="p-2 w-full">
+                            <a href="./aiandmetaverse.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                relative overflow-hidden z-10">
+                                View
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/hackerrank.png" alt="blog">
+                    <div class="p-4 ">
+
+                        <div class="flex items-center justify-between text-xs mb-4">
+                            <a class="text-white">
+                                Issue date: 31 December, 2022
+                            </a>
+                            <span class="text-[#FF5733]">
+                                Expiration date: No expire date
+                            </span>
+                        </div>
+
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                            React (Basic)</h1>
+                        <p class="mb-3 text-white text-xs text-center">
+                            I have succefully completed React (Basic) Course, as I have covered topics like Basic Routing, Rendering Elements,State Management (Internal Component State), Handling Events, ES6 and JavaScript and Form Validation.
+                        </p>
+                        <div class="p-2 w-full">
+                            <a href="./react.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                relative overflow-hidden z-10">
+                                View
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/hackerrank.png" alt="blog">
+                    <div class="p-4 ">
+
+                        <div class="flex items-center justify-between text-xs mb-4">
+                            <a class="text-white">
+                                Issue date: 28 December, 2022
+                            </a>
+                            <span class="text-[#FF5733]">
+                                Expiration date: No expire date
+                            </span>
+                        </div>
+
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                            SQL (Intermediate)</h1>
+                        <p class="mb-3 text-white text-xs text-center">
+                            I have succefully completed SQL (Intermediate) Course, It includes complex joins, unions, and sub-queries.
+                        </p>
+                        <div class="p-2 w-full">
+                            <a href="./sqlinter.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                relative overflow-hidden z-10">
+                                View
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/tcs_logo.jpg" alt="blog">
+                    <div class="p-4 ">
+
+                        <div class="flex items-center justify-between text-xs mb-4">
+                            <a class="text-white">
+                                Issue date: 28 December, 2022
+                            </a>
+                            <span class="text-[#FF5733]">
+                                Expiration date: No expire date
+                            </span>
+                        </div>
+
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                            TCS MasterCraft DataPlus</h1>
+                        <p class="mb-3 text-white text-xs text-center">
+                            I have succefully completed TCS MasterCraft DataPlus Course, It includes topic on Need for Data Management in Enterprises, Challenges in Data Management, Importance of Data Privacy and Data Quality, Life Cycle of Data, Metadata, Capabilities of TCS MasterCraft™ DataPlus, Features and Benefits of TCS MasterCraft™ DataPlus.
+                        </p>
+                        <div class="p-2 w-full">
+                            <a href="./tcsdataplus.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                relative overflow-hidden z-10">
+                                View
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                    <img class="h-46 rounded-lg w-full object-cover object-center"
+                        src="./assets/img/portfolio/nascom.jpg" alt="blog">
+                    <div class="p-4 ">
+
+                        <div class="flex items-center justify-between text-xs mb-4">
+                            <a class="text-white">
+                                Issue date: 19 January, 2023
+                            </a>
+                            <span class="text-[#FF5733]">
+                                Expiration date: No expire date
+                            </span>
+                        </div>
+
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                            Full Stack Development with MEAN</h1>
+                        <p class="mb-3 text-white text-xs text-center">
+                            I have succefully completed Full Stack Development with MEAN Course.-
+                        </p>
+                        <div class="p-2 w-full">
+                            <a href="./nasscomfullstack.html"><button class="btn__hover flex mx-auto text-white hover:text-black bg-cyan-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+                                relative overflow-hidden z-10">
+                                View
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
+        </div>
+        </div>
+        </div>
         </div>
 
     </section>
 
     
 
-    <!--::::::::::::::::-Portfolio section-:::::::::::::::-->
+    <!--::::::::::::::::-Internship section-:::::::::::::::-->
     <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden" id="protfolio">
         <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
             <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr06">
                 My
-                <span class="text-[#00FFFF]">Portfolio</span>
+                <span class="text-[#00FFFF]">Internships</span>
                 <span
                     class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
-                    Portfolio
+                    Internships
                 </span>
             </h2>
         </div>
@@ -1553,47 +1900,34 @@
             </h2>
         </div>
 
-        <div class="max-w-7xl px-6 mt-10 relative mx-auto">
-
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8 pt-14">
-
-                <!-- stat - start -->
-                <div class="flex flex-col justify-center items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr07">
-                    <div class="w-20 md:w-28 mb-2">
-                        <img src="assets/img/icon/Group 1.svg" alt="">
-                    </div>
-                    <p class="text-base font-semibold text-white">300+ projects</p>
-                </div>
-                <!-- stat - end -->
-
-                <!-- stat - start -->
-                <div class="flex flex-col justify-center items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr08">
-                    <div class="w-20 md:w-28 mb-2">
-                        <img src="assets/img/icon/Group(1).svg" alt="">
-                    </div>
-                    <p class="text-base font-semibold text-white">250+ projects</p>
-                </div>
-                <!-- stat - end -->
-
-                <!-- stat - start -->
-                <div class="flex flex-col justify-center items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr09">
-                    <div class="w-20 md:w-28 mb-2">
-                        <img src="assets/img/icon/Group.svg" alt="">
-                    </div>
-                    <p class="text-base font-semibold text-white">220+ projects</p>
-                </div>
-                <!-- stat - end -->
-
-                <!-- stat - start -->
-                <div class="flex flex-col justify-center items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr10">
-                    <div class="w-20 md:w-28 mb-2">
-                        <img src="assets/img/icon/Vector(1).svg" alt="">
-                    </div>
-                    <p class="text-base font-semibold text-white">100+ projects</p>
-                </div>
-                <!-- stat - end -->
-
+        <div class="sliderAx h-auto">
+            <div id="slider-1" class="container mx-auto">
+              <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill " style="background-image: url(./assets/img/portfolio/certificate/codedebud.jpg)">
+             <div class="md:w-1/2">
+              <p class="font-bold text-sm uppercase">Services</p>
+              <p class="text-3xl font-bold">Hello world</p>
+              <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+              <a href="#" class="bg-cyan-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+              </div>  
+          </div> <!-- container -->
+            <br>
             </div>
+      
+            <div id="slider-2" class="container mx-auto">
+              <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.unsplash.com/photo-1544144433-d50aff500b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+             
+        <p class="font-bold text-sm uppercase">Services</p>
+              <p class="text-3xl font-bold">Hello world</p>
+              <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+              <a href="#" class="bg-cyan-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+               
+          </div> <!-- container -->
+            <br>
+            </div>
+          </div>
+       <div  class="flex justify-between w-12 mx-auto pb-2">
+              <button id="sButton1" onclick="sliderButton1()" class="bg-cyan-400 rounded-full w-4 pb-2 " ></button>
+          <button id="sButton2" onclick="sliderButton2() " class="bg-cyan-400 rounded-full w-4 p-2"></button>
         </div>
 
     </section>

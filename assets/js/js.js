@@ -80,7 +80,7 @@ var swiper = new Swiper(".slide-content", {
             spaceBetween: 10,
         },
         410: {
-            slidesPerView: 1.1,
+            slidesPerView: 0.1,
             spaceBetween: 20,
             coverflowEffect:
             {
@@ -88,7 +88,7 @@ var swiper = new Swiper(".slide-content", {
             }
         },
         640: {
-            slidesPerView: 1.4,
+            slidesPerView: 0.4,
             spaceBetween: 20,
             coverflowEffect:
             {
@@ -96,7 +96,7 @@ var swiper = new Swiper(".slide-content", {
             }
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 1.5,
             spaceBetween: 20,
             coverflowEffect:
             {
@@ -104,7 +104,7 @@ var swiper = new Swiper(".slide-content", {
             }
         },
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 1.5,
             spaceBetween: 30,
             coverflowEffect:
             {
@@ -132,8 +132,8 @@ var parallax = new Parallax(scene4);
 //-----animation-----//
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '60px',
-    duration: 2500,
+    distance: '40px',
+    duration: 900,
     delay: 200,
     reset: true,
 });

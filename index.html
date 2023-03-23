@@ -23,11 +23,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--parallax-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.js"></script> -->
     <link rel="stylesheet" href="https://rawcdn.githack.com/nextapps-de/spotlight/0.7.8/dist/css/spotlight.min.css">
         <script src="https://rawcdn.githack.com/nextapps-de/spotlight/0.7.8/dist/js/spotlight.min.js"></script>
 
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-
+        
+        
         
   <!-- <script>
     var cont=0;
@@ -198,12 +200,30 @@ function sliderButton1(){
         <div class="max-w-7xl relative flex  justify-center mx-auto flex-col-reverse lg:flex-row lg:justify-between">
             <div
                 class="flex flex-col mt-8 justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                <h1 class="text-2xl font-normal leading-none lg:text-5xl text-white  sr01" name="keywords">
-                    I'M
-                    <br />
-                    Cloud Engineer
-                    <span class="font-semibold "> Web Developer || UI/XI Designer </span>
-                </h1>
+                <div class="container">
+                    <span class="text first-text">I'm a &nbsp;</span>
+                    <span class="text sec-text">Cloud Engineer</span>
+                </div>
+
+                <script>
+                    const text = document.querySelector(".sec-text");
+            
+                    const textLoad = () => {
+                        setTimeout(() => {
+                            text.textContent = "Cloud Engineer";
+                        }, 0);
+                        setTimeout(() => {
+                            text.textContent = "Full-Stack Developer";
+                        }, 4000);
+                        setTimeout(() => {
+                            text.textContent = "UI/XI Designer";
+                        }, 8000); //1s = 1000 milliseconds
+                    }
+            
+                    textLoad();
+                    setInterval(textLoad, 12000);
+                </script>
+                
                 <span class="mt-3 lg:mx-0 mx-auto w-24 h-[3px] bg-gray-200 rounded sr02"></span>
                 <p class="mt-2 mb-0 lg:mb-8 text-base md:text-lg text-white sr02">
                     Expertise in Cloud Computing and 2 years of
@@ -372,10 +392,10 @@ function sliderButton1(){
                     </div>
 
                     <div class="flex justify-start mt-5 sr04">
-                        <button
+                        <a href="#contactme"><button
                             class="flex text-white border border-[#00FFFF] w-28 h-14 md:w-32 justify-center items-center relative z-10 overflow-hidden hover:text-[#647bff] hover:border-none btn__hover focus:outline-none rounded-xl text-sm sm:text-base">
                             Contact Me
-                        </button>
+                        </button></a>
                         <button
                             class="ml-3 md:ml-8 flex text-black bg-[#00FFFF] border border-[#647bff] w-28 h-14 md:w-32 justify-center items-center relative z-10 overflow-hidden hover:text-[#647bff] hover:border-none btn__hover focus:outline-none rounded-xl text-sm sm:text-base">
                             Hire Now
@@ -1791,7 +1811,7 @@ function sliderButton1(){
             <div class="slide-content overflow-hidden pb-14 mx-6 sr02">
                 <div class=" swiper-wrapper select-none">
 
-                    <div class="min-h-screen bg-gradient-to-tr from-red-300 to-yellow-200 flex justify-center items-center py-20">
+                    <div class="min-h-screen bg-gradient-to-tr from-red-300 to-yellow-200 flex justify-center items-center py-20 rounded-lg">
                         <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
                           <div class="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
                             <h3 class="mb-3 text-xl font-bold text-indigo-600">Beginner Friendly</h3>
@@ -1930,14 +1950,25 @@ function sliderButton1(){
         <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
             <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr01">
                 My
-                <span class="text-[#00FFFF]">Blog</span>
+                <span class="text-[#00FFFF]">Awards</span>
                 <span
                     class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
-                    Blog
+                    Awards
                 </span>
             </h2>
         </div>
 
+        <div id="slidy-container">
+            <figure id="slidy">
+              <img src="./assets/img/awards/codedebud.jpg" alt="code debugg" data-caption="First Position in Code Debugging">
+               <img src="./assets/img/awards/csar.jpg" alt="csar" data-caption="Certificate of appreciation for CSaR Website" >
+               <img src="./assets/img/awards/ictauiz.jpg" alt="ict" data-caption="ICT QUIZ">
+               <img src="./assets/img/awards/designofimpact.jpg" alt="design impact" data-caption="Design for Impact">
+               <img src="./assets/img/awards/enterpreneurship.jpg" alt="Enterpreneurship" data-caption="Enterpreneurship Ecosystem Scope for Agripreneurs">
+               <img src="./assets/img/awards/navigatingeco.jpg" alt="native" data-caption="Navigating Retail Ecosystems">
+            </figure>
+          </div>
+        
        
 
     </section>

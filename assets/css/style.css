@@ -41,7 +41,7 @@
   ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: #647bfd;
+    background: #40f4f1;
   }
 
   .show {
@@ -177,5 +177,44 @@
     margin: 0 0.5rem !important;
   }
 
+  #slidy-container { 
+    width: 50%; margin: 0 auto; overflow: hidden;
+    border-radius: 45px;
+
+  }
+
+  .container{
+    width: 246px;
+    overflow: hidden;
+}
+.container .text{
+    position: relative;
+    color: #40f4f1;
+    font-size: 30px;
+    font-weight: 600;
+}
+.container .text.first-text{
+    color: #FFF;
+    font-size: 40px;
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #010718;
+    border-left: 2px solid #4070F4;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
   
 }

@@ -31,86 +31,14 @@
         
         
         
-  <!-- <script>
-    var cont=0;
-function loopSlider(){
-  var xx= setInterval(function(){
-        switch(cont)
-        {
-        case 0:{
-            $("#slider-1").fadeOut(400);
-            $("#slider-2").delay(400).fadeIn(400);
-            $("#sButton1").removeClass("bg-cyan-800");
-            $("#sButton2").addClass("bg-cyan-800");
-        cont=1;
-        
-        break;
-        }
-        case 1:
-        {
-        
-            $("#slider-2").fadeOut(400);
-            $("#slider-1").delay(400).fadeIn(400);
-            $("#sButton2").removeClass("bg-cyan-800");
-            $("#sButton1").addClass("bg-cyan-800");
-           
-        cont=0;
-        
-        break;
-        }
-        
-        
-        }},8000);
-
-}
-
-function reinitLoop(time){
-clearInterval(xx);
-setTimeout(loopSlider(),time);
-}
-
-
-
-function sliderButton1(){
-
-    $("#slider-2").fadeOut(400);
-    $("#slider-1").delay(400).fadeIn(400);
-    $("#sButton2").removeClass("bg-cyan-800");
-    $("#sButton1").addClass("bg-cyan-800");
-    reinitLoop(4000);
-    cont=0
-    
-    }
-    
-    function sliderButton2(){
-    $("#slider-1").fadeOut(400);
-    $("#slider-2").delay(400).fadeIn(400);
-    $("#sButton1").removeClass("bg-cyan-800");
-    $("#sButton2").addClass("bg-cyan-800");
-    reinitLoop(4000);
-    cont=1
-    
-    }
-
-    $(window).ready(function(){
-        $("#slider-2").hide();
-        $("#sButton1").addClass("bg-cyan-800");
-        
-
-        loopSlider();
-    });
-
-  
-  </script> -->
-        
 
 </head>
 
-<body>
+<body oncontextmenu="return false;" >
 
     <!--:::::::::::::::::::::-Header-::::::::::::::::::::-->
     <header class="w-full fixed top-0 left-0 bg-[#090a1a] z-[999] flex justify-between items-center h-16 lg:px-0 px-4">
-        <a class="text-white block md:hidden" href="#" id="menuOpen">
+        <a class="text-white block md:hidden" href="#" id="menuOpen" name="keywords">
             <img src="assets/img/kiranwhitelogo.png" class="h-7 sm:h-9" alt="logo" />
         </a>
         <!--open button-->
@@ -129,7 +57,7 @@ function sliderButton1(){
                 </button>
 
                 <div>
-                    <a href="#" class="flex items-center" >
+                    <a href="#" class="flex items-center" name="keywords">
                         <img src="assets/img/kiranwhitelogo.png" class="h-6 sm:h-9" alt="logo" />
                     </a>
                     <p class="text-white text-base font-semibold cursor-pointer md:hidden" name="keywords">
@@ -180,7 +108,6 @@ function sliderButton1(){
                                 Internships
                             </a>
                         </li>
-
                         <li class="my-4 mx-1 md:my-0">
                             <a href="#contactme"
                                 class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
@@ -202,7 +129,7 @@ function sliderButton1(){
                 class="flex flex-col mt-8 justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                 <div class="container">
                     <span class="text first-text">I'm a &nbsp;</span>
-                    <span class="text sec-text">Cloud Engineer</span>
+                    <span class="text sec-text" name="keywords">Cloud Engineer</span>
                 </div>
 
                 <script>
@@ -225,7 +152,7 @@ function sliderButton1(){
                 </script>
                 
                 <span class="mt-3 lg:mx-0 mx-auto w-24 h-[3px] bg-gray-200 rounded sr02"></span>
-                <p class="mt-2 mb-0 lg:mb-8 text-base md:text-lg text-white sr02">
+                <p class="mt-2 mb-0 lg:mb-8 text-base md:text-lg text-white sr02" name="keywords">
                     Expertise in Cloud Computing and 2 years of
                     <br class="hidden md:inline lg:hidden" />
                     Work Experience in Web-Development
@@ -240,7 +167,7 @@ function sliderButton1(){
 
             <div class="lg:block hidden absolute  ">
                 <span class="absolute opacity-10 -top-36 scene" id="scene">
-                    <h1 class="text-white font-bold uppercase text-[18rem]" data-depth="0.40">Kiran</h1>
+                    <h1 class="text-white font-bold uppercase text-[18rem]" data-depth="0.40" name="keywords">Kiran</h1>
                 </span>
                 <span class="absolute w-8 left-56 top-32 scene2" id="scene2">
                     <img src="assets/img/Ellipse 1.png" alt="" data-depth="2.5">
@@ -260,7 +187,7 @@ function sliderButton1(){
             </div>
             <div
                 class="absolute flex left-0 right-0 top-auto lg:top-0 lg:left-auto lg:-right-32 bottom-0 justify-center items-center gap-4 lg:rotate-90">
-                <span class="text-white text-sm font-semibold tracking-widest w-max">
+                <span class="text-white text-sm font-semibold tracking-widest w-max" name="keywords">
                     Follow me
                 </span>
                 <span class="w-12 h-[3px] bg-[#00FFFF] rounded"></span>
@@ -314,17 +241,17 @@ function sliderButton1(){
                         <h3
                             class="text-lg font-medium mb-2.5 bg-[#647bff] bg-opacity-[0.161] text-[#00FFFF] rounded px-4 w-max">
                             Bio</h3>
-                        <p class=" leading-7 text-sm">I'm an innovative thinker with 2 years’ experience in Cloud Computing, Operating System, Web Development and Data Science. I am a Practical Knowledge seeker. 
+                        <p class=" leading-7 text-sm" align="justify" name="keywords">I'm an innovative thinker with 2 years’ experience in Cloud Computing, Operating System, Web Development and Data Science. I am a Practical Knowledge seeker. 
                             I like to work in teams and enjoy projects that require multi-disciplinary collaboration.</p>
-                        <p class=" leading-7 mt-2.5 text-sm">Looking to leverage my skills to produce seamless and profitable UI for Semtex Systems.</p>
+                        <p class=" leading-7 mt-2.5 text-sm" name="keywords">Looking to leverage my skills to produce seamless and profitable UI for Semtex Systems.</p>
                     </div>
                     <div class="text-white mt-6 sr03">
                         <div class=" grid grid-cols-1 sm:grid-cols-2 gap-6">
 
                             <div class="flex">
                                 <h5
-                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
-                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4">Name
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col" name="keywords">
+                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4" name="keywords">Name
                                         :</span>
                                     Kiran Kumar Malik
                                 </h5>
@@ -332,48 +259,48 @@ function sliderButton1(){
 
                             <div class="flex">
                                 <h5
-                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
-                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4">Age
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col" name="keywords">
+                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4" name="keywords">Age
                                         :</span>
                                     20
                                 </h5>
                             </div>
                             <div class="flex">
                                 <h5
-                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
-                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4">Degree
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col" name="keywords">
+                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4" name="keywords">Degree
                                         :</span>
                                     B. Tech in CSE
                                 </h5>
                             </div>
                             <div class="flex">
                                 <h5
-                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
-                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4">
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col" name="keywords">
+                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4" name="keywords">
                                         Phone :</span>
                                     7848051078
                                 </h5>
                             </div>
                             <div class="flex">
                                 <h5
-                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
-                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4">
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col" name="keywords">
+                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4" name="keywords">
                                         Nationality :</span>
                                     Indian
                                 </h5>
                             </div>
                             <div class="flex">
                                 <h5
-                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
-                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4">
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col" name="keywords">
+                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4" name="keywords">
                                         Address :</span>
                                         Dhamara, Bhadrak, 756171
                                 </h5>
                             </div>
                             <div class="flex">
                                 <h5
-                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
-                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4">
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col" name="keywords">
+                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4" name="keywords">
                                         Email :</span>
                                     malikkiran413@gmail.com
                                 </h5>
@@ -381,8 +308,8 @@ function sliderButton1(){
 
                             <div class="flex">
                                 <h5
-                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
-                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4">
+                                    class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col" name="keywords">
+                                    <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4" name="keywords">
                                         Website :</span>
                                         <a href="./index.html">www.kirankumarmalik.me</a>
                                 </h5>
@@ -409,11 +336,11 @@ function sliderButton1(){
     <!--:::::::::::::::::-Skill section-::::::::::::::::-->
     <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden" id="skills">
         <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
-            <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr01">
+            <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr01" name="keywords">
                 My
                 <span class="text-[#00FFFF]">Skills</span>
                 <span
-                    class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
+                    class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10" name="keywords">
                     Skills
                 </span>
             </h2>
@@ -423,7 +350,7 @@ function sliderButton1(){
             <div class="max-w-md md:max-w-[50rem] mx-auto">
                 <div class=" flex justify-center items-center mt-4 mb-8 md:gap-4 gap-2">
                     <h3
-                        class="text-sm sm:text-base font-medium bg-[#647bff] bg-opacity-[0.161] text-[#00FFFF] rounded w-max px-2">
+                        class="text-sm sm:text-base font-medium bg-[#647bff] bg-opacity-[0.161] text-[#00FFFF] rounded w-max px-2" name="keywords">
                         Technical skills
                     </h3>
                 </div>
@@ -431,7 +358,7 @@ function sliderButton1(){
                 <div class="mt-12">
                     <div class="md:flex sm:block items-center justify-between mb-10 sr02">
                         <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
-                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium">
+                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium" name="keywords">
                                 HTML5
                             </h3>
                         </div>
@@ -479,7 +406,7 @@ function sliderButton1(){
 
                     <div class="md:flex sm:block items-center justify-between mb-10 sr03">
                         <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
-                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium">
+                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium" name="keywords">
                                 Tailwind CSS </h3>
                         </div>
                         <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
@@ -526,7 +453,7 @@ function sliderButton1(){
 
                     <div class="md:flex sm:block items-center justify-between mb-10 sr04">
                         <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
-                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium">
+                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium" name="keywords">
                                 Javascript</h3>
                         </div>
                         <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
@@ -572,7 +499,7 @@ function sliderButton1(){
 
                     <div class="md:flex sm:block items-center justify-between mb-10 sr05">
                         <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
-                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium">
+                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium" name="keywords">
                                 PHP</h3>
                         </div>
                         <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
@@ -619,7 +546,7 @@ function sliderButton1(){
 
                     <div class="md:flex sm:block items-center justify-between mb-10 sr04">
                         <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
-                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium">
+                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium" name="keywords">
                                 MySQL</h3>
                         </div>
                         <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
@@ -666,7 +593,7 @@ function sliderButton1(){
 
                     <div class="md:flex sm:block items-center justify-between mb-10 sr04">
                         <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
-                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium">
+                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium" name="keywords">
                                 Bootstrap</h3>
                         </div>
                         <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
@@ -713,7 +640,7 @@ function sliderButton1(){
 
                     <div class="md:flex sm:block items-center justify-between mb-10 sr04">
                         <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
-                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium">
+                            <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium" name="keywords">
                                 C++</h3>
                         </div>
                         <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
@@ -760,7 +687,7 @@ function sliderButton1(){
 
                 <div class="md:flex sm:block items-center justify-between mb-10 sr04">
                     <div class="md:pr-2 lg:pr-4 md:pb-0 pb-5">
-                        <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium">
+                        <h3 class="text-white sm:text-left text-center md:text-lg lg:text-xl font-medium" name="keywords">
                             Python</h3>
                     </div>
                     <div class="flex md:gap-6 sm:gap-[1.2rem] gap-2 justify-center">
@@ -815,9 +742,9 @@ function sliderButton1(){
         <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
             <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr06">
                 My
-                <span class="text-[#00FFFF]">Education</span>
+                <span class="text-[#00FFFF]" name="keywords">Education</span>
                 <span
-                    class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
+                    class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10" name="keywords">
                     Education
                 </span>
             </h2>
@@ -829,7 +756,7 @@ function sliderButton1(){
                 <div class="flex flex-col p-5 md:p-0 md:pl-16 md:w-[50%]">
                     <div class="text-white sr02">
                         <h3
-                            class="text-lg font-medium mb-2.5 bg-[#647bff] bg-opacity-[0.161] text-[#00FFFF] rounded px-4 w-max">
+                            class="text-lg font-medium mb-2.5 bg-[#647bff] bg-opacity-[0.161] text-[#00FFFF] rounded px-4 w-max" name="keywords">
                             BACHELOR OF TECHNOLOGY IN COMPUTER SCIENCE & ENGINEERING</h3>
                             <div class="flex">
                                 <h5
@@ -839,42 +766,42 @@ function sliderButton1(){
                                 </div>
                                 <div class="flex">
                                     <h5
-                                        class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
+                                        class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col" name="keywords">
                                         Centurion university of Technology and Management
                                     </h5>
                                 </div>
                             </div>
                                 <div class="text-white sr02">
-                        <p class=" leading-7 text-sm">Maintained CGPA above 9.5 in 4th Semester</p>
+                        <p class=" leading-7 text-sm" name="keywords">Maintained CGPA above 9.5 in 4th Semester</p>
                     </div>
                     </div>
 
                     <div class="flex flex-col p-5 md:p-0 md:pl-16 md:w-[50%]">
                         <div class="text-white sr02">
                             <h3
-                                class="text-lg font-medium mb-2.5 bg-[#647bff] bg-opacity-[0.161] text-[#00FFFF] rounded px-4 w-max">
+                                class="text-lg font-medium mb-2.5 bg-[#647bff] bg-opacity-[0.161] text-[#00FFFF] rounded px-4 w-max" name="keywords">
                                 CLASS XI & XII IN SCIENCE</h3>
                                 <div class="flex">
                                     <h5
                                         class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
-                                        <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4">2018-20</span>
+                                        <span class="text-[#00FFFF] font-semibold md:text-lg text-base mr-4" name="keywords">2018-20</span>
                                     </h5>
                                     </div>
                                     <div class="flex">
                                         <h5
-                                            class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
+                                            class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col" name="keywords">
                                             Khaira Higher Secondary School, Balasore, Odisha, IND
                                         </h5>
                                     </div>
                                 </div>
                                     <div class="text-white sr02">
-                            <p class=" leading-7 text-sm">My 11th and 12th background is Science under Odisha CHSE board.</p>
+                            <p class=" leading-7 text-sm" name="keywords">My 11th and 12th background is Science under Odisha CHSE board.</p>
                         </div>
                     </div>
                     <div class="flex flex-col p-5 md:p-0 md:pl-16 md:w-[50%]">
                         <div class="text-white sr02">
                             <h3
-                                class="text-lg font-medium mb-2.5 bg-[#647bff] bg-opacity-[0.161] text-[#00FFFF] rounded px-4 w-max">
+                                class="text-lg font-medium mb-2.5 bg-[#647bff] bg-opacity-[0.161] text-[#00FFFF] rounded px-4 w-max" name="keywords">
                                 CLASS X</h3>
                                 <div class="flex">
                                     <h5
@@ -884,13 +811,13 @@ function sliderButton1(){
                                     </div>
                                     <div class="flex">
                                         <h5
-                                            class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col">
+                                            class="text-base text-white font-medium block lg:block md:flex md:justify-start md:flex-col" name="keywords">
                                             Happy Home English Medium School, Bhadrak, Odisha, IND
                                         </h5>
                                     </div>
                                 </div>
                                     <div class="text-white sr02">
-                            <p class=" leading-7 text-sm">My schooling is under ICSE board.</p>
+                            <p class=" leading-7 text-sm" name="keywords">My schooling is under ICSE board.</p>
                         </div>
                         </div>
                     </div>
@@ -907,7 +834,7 @@ function sliderButton1(){
         <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
             <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr01">
                 My
-                <span class="text-[#00FFFF]">Certifications</span>
+                <span class="text-[#00FFFF]" name="keywords">Certifications</span>
                 <span
                     class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
                     Certifications
@@ -922,7 +849,7 @@ function sliderButton1(){
             <div
                 class="max-w-xs md:max-w-[42rem] lg:max-w-[62rem] mx-auto grid grid-cols-1 pt-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
 
-                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800" name="keywords">
                     <img class="h-46 rounded-lg w-full object-cover object-center"
                         src="./assets/img/portfolio/awscloudpractictioner.jpg" alt="blog">
                     <div class="p-4 ">
@@ -936,9 +863,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             AWS Cloud Practitioner</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed AWS Certified Cloud Practictioner Certification, as I have a fundamental understanding of IT services and their uses in the AWS Cloud.
                         </p>
                         <div class="p-2 w-full">
@@ -948,7 +875,7 @@ function sliderButton1(){
                         </div>
                     </div>
                 </div>
-                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800" name="keywords">
                     <img class="h-46 rounded-lg w-full object-cover object-center"
                         src="./assets/img/portfolio/awssolution.jpg" alt="blog">
                     <div class="p-4 ">
@@ -962,9 +889,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             AWS Certified Solutions Architect-Associate</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed AWS Certified Solutions Architect-Associate Certification, as I have a comprehensive understanding of AWS services and technologies. 
                         </p>
                         <div class="p-2 w-full">
@@ -988,9 +915,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             AWS Certified Solutions Architect-Associate</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have of this badge have taken the AWS Academy Cloud Foundations course.
                         </p>
                         <div class="p-2 w-full">
@@ -1001,7 +928,7 @@ function sliderButton1(){
                     </div>
                 </div>
 
-                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800" name="keywords">
                     <img class="h-46 rounded-lg w-full object-cover object-center"
                         src="./assets/img/portfolio/awsacademysem1.jpg" alt="blog">
                     <div class="p-4 ">
@@ -1015,9 +942,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             AWS Academy Graduate - AWS Academy Introduction to Cloud Semester 1</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have of this badge have completed the AWS Academy Introduction to Cloud Semester 1.
                         </p>
                         <div class="p-2 w-full">
@@ -1042,9 +969,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             Microsoft Certified: Azure Fundamentals</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed  Microsoft Certified: Azure Fundamentals Certification, as I have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.
                         </p>
                         <div class="p-2 w-full">
@@ -1069,9 +996,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             Microsoft Certified: Azure AI Fundamentals</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed Microsoft Certified: Azure Fundamentals Certification, as I have demonstrated foundational knowledge of machine learning (ML) and artificial intelligence (AI) concepts and related Microsoft Azure services.
                         </p>
                         <div class="p-2 w-full">
@@ -1096,9 +1023,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             Google Cloud Fundamentals for AWS Professionals</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed Google Cloud Fundamentals for AWS Professionals Certification, as I have a fundamental understanding and experience of Load Balancing, Google, Google Cloud Platform, Cloud Computing.
                         </p>
                         <div class="p-2 w-full">
@@ -1122,9 +1049,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             The Fundamentals of Digital Marketing</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed The Fundamentals of Digital Marketing Certification from Google Digital Garage, Master the basics of digital marketing with our free course accredited by Interactive Advertising Bureau Europe and The Open University.
                         </p>
                         <div class="p-2 w-full">
@@ -1148,9 +1075,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             IBM Cloud Essentials</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed IBM Cloud Essentials Certification, as IBM Cloud enables the different service (IaaS, PaaS, SaaS) models and different deployment (Public, Hybrid, Private) models of cloud computing. 
                         </p>
                         <div class="p-2 w-full">
@@ -1175,9 +1102,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             Building Cloud Native and Multicloud Applications</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed Building Cloud Native and Multicloud Applications Certification, as I am able to make decisions about migrating existing images to cloud; modernizing applications; using cloud-native practices; leveraging best practices for continuous integration and continuous delivery; and managing multiple cloud infrastructures, applications and middleware.
                         </p>
                         <div class="p-2 w-full">
@@ -1201,9 +1128,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             Cloud Scalability</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed Cloud Scalability pathway, as I learnt about Cloud scalability and its types. You will also learn about the need for and importance of Cloud Scalability in businesses.
                         </p>
                         <div class="p-2 w-full">
@@ -1228,9 +1155,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             AI and Metaverse</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed AI and Metaverse pathway, as I have learnt how Artificial Intelligence (AI) is being used tp shape the Metaverse. You will also learn about the applications of AI in Metaverse.
                         </p>
                         <div class="p-2 w-full">
@@ -1241,7 +1168,7 @@ function sliderButton1(){
                     </div>
                 </div>
 
-                <div class="h-full rounded-lg overflow-hidden bg-slate-800">
+                <div class="h-full rounded-lg overflow-hidden bg-slate-800" name="keywords">
                     <img class="h-46 rounded-lg w-full object-cover object-center"
                         src="./assets/img/portfolio/hackerrank.png" alt="blog">
                     <div class="p-4 ">
@@ -1255,9 +1182,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             React (Basic)</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed React (Basic) Course, as I have covered topics like Basic Routing, Rendering Elements,State Management (Internal Component State), Handling Events, ES6 and JavaScript and Form Validation.
                         </p>
                         <div class="p-2 w-full">
@@ -1282,9 +1209,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             SQL (Intermediate)</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed SQL (Intermediate) Course, It includes complex joins, unions, and sub-queries.
                         </p>
                         <div class="p-2 w-full">
@@ -1309,9 +1236,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             TCS MasterCraft DataPlus</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed TCS MasterCraft DataPlus Course, It includes topic on Need for Data Management in Enterprises, Challenges in Data Management, Importance of Data Privacy and Data Quality, Life Cycle of Data, Metadata, Capabilities of TCS MasterCraft™ DataPlus, Features and Benefits of TCS MasterCraft™ DataPlus.
                         </p>
                         <div class="p-2 w-full">
@@ -1336,9 +1263,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             Full Stack Development with MEAN</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed Full Stack Development with MEAN Course.-
                         </p>
                         <div class="p-2 w-full">
@@ -1363,9 +1290,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             Data Structures and Algorithms: The Complete Masterclass</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed Data Structures and Algorithms: The Complete Masterclas from Infosys.
                         </p>
                         <div class="p-2 w-full">
@@ -1390,9 +1317,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             Introduction to Cloud Computing</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed Introduction to Cloud Computing from infosys.
                         </p>
                         <div class="p-2 w-full">
@@ -1417,9 +1344,9 @@ function sliderButton1(){
                             </span>
                         </div>
 
-                        <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                        <h1 class="title-font text-base font-semibold text-white text-center mb-4" name="keywords">
                             Trends in Cybersecurity</h1>
-                        <p class="mb-3 text-white text-xs text-center">
+                        <p class="mb-3 text-white text-xs text-center" name="keywords">
                             I have succefully completed Trends in Cybersecurity from infosys.
                         </p>
                         <div class="p-2 w-full">
@@ -1945,8 +1872,8 @@ function sliderButton1(){
        
     </section>
 
-    <!--:::::::::::::::::-Blog section-::::::::::::::::-->
-    <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden" id="about">
+    <!--:::::::::::::::::-Awards section-::::::::::::::::-->
+    <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden" id="">
         <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
             <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10 sr01">
                 My
@@ -1958,14 +1885,17 @@ function sliderButton1(){
             </h2>
         </div>
 
-        <div id="slidy-container">
-            <figure id="slidy">
+        <div id="slidy-container" name="keywords">
+            <figure id="slidy" name="keywords">
               <img src="./assets/img/awards/codedebud.jpg" alt="code debugg" data-caption="First Position in Code Debugging">
                <img src="./assets/img/awards/csar.jpg" alt="csar" data-caption="Certificate of appreciation for CSaR Website" >
                <img src="./assets/img/awards/ictauiz.jpg" alt="ict" data-caption="ICT QUIZ">
                <img src="./assets/img/awards/designofimpact.jpg" alt="design impact" data-caption="Design for Impact">
                <img src="./assets/img/awards/enterpreneurship.jpg" alt="Enterpreneurship" data-caption="Enterpreneurship Ecosystem Scope for Agripreneurs">
                <img src="./assets/img/awards/navigatingeco.jpg" alt="native" data-caption="Navigating Retail Ecosystems">
+               <img src="./assets/img/awards/csar1.jpg" alt="csar1" data-caption="Award Ceremony for CSaR Website">
+               <img src="./assets/img/awards/csar2.jpg" alt="csar2" data-caption="Award Ceremony for CSaR Website">
+               <img src="./assets/img/awards/csar3.jpg" alt="csar3" data-caption="Award Ceremony for CSaR Website">
             </figure>
           </div>
         
@@ -2082,6 +2012,8 @@ function sliderButton1(){
             </div>
         </div>
     </section>
+
+    
 
     <!---scrollreveal--->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

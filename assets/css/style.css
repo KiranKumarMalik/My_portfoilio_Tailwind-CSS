@@ -179,7 +179,7 @@
 
   #slidy-container { 
     width: 50%; margin: 0 auto; overflow: hidden;
-    border-radius: 45px;
+    border-radius: 25px;
 
   }
 
@@ -204,7 +204,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #010718;
+    background-color: #090A1A;
     border-left: 2px solid #4070F4;
     animation: animate 4s steps(12) infinite;
 }
